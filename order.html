@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>Order</title>
+</head>
+<body>
+	<main class="container">
+		<div class="title"><h1 class="title_text" >COFEE HOUSE</h1></div>
+		<div class="user_data">
+			<div class="first_name"><input type="text" placeholder="Введите Имя"></div>
+			<div class="sur_name"><input type="text" placeholder="Введите Фамилию"></div>
+		</div>
+
+		<div class="items">
+			<div  class="column">
+				<div><input class="checkbox" type="checkbox" name="item1" id="cb" value="80"><label for="item1">Экспрессо 80р.</label><input type="number" class="item_amount"></div>
+				<div><input class="checkbox" type="checkbox" name="item2" id="cb" value="110"><label for="item2">Американо 110р.</label><input type="number" class="item_amount" placeholder="0"></div>
+				<div><input class="checkbox" type="checkbox" name="item3" id="cb" value="120"><label for="item3">Латте 120р.</label><input type="number" class="item_amount"></div>
+				<div><input class="checkbox" type="checkbox" name="item4" id="cb" value="90"><label for="item4">Капучино 90р.</label><input type="number" class="item_amount"></div>
+			</div>
+
+			<div  class="column">
+				<div><input class="checkbox" type="checkbox" name="item5" id="cb" value="80"><label for="item5">Шоколадный кекс 80р.</label><input type="number" class="item_amount"></div>
+				<div><input class="checkbox" type="checkbox" name="item6" id="cb" value="90"><label for="item6">Черничный кекс 90р.</label><input type="number" class="item_amount"></div>
+				<div><input class="checkbox" type="checkbox" name="item7" id="cb" value="110"><label for="item7">Яблочный тарт 110р.</label><input type="number" class="item_amount"></div>
+			</div>
+		</div>
+
+
+		<div class="summ">
+			<span class="total_sum">Итог: 0 р. </span>
+			<button class="btn">Оформить заказ</button>
+			
+		</div>
+	</main>
+
+	<script src="main.js"></script>
+</body>
+</html>
