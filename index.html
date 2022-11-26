@@ -14,23 +14,23 @@
 	<main class="container">
 		<div class="title"><h1 class="title_text" >COFEE HOUSE</h1></div>
 		<div class="user_data">
-			<div class="first_name"><input type="text" placeholder="Введите Имя"></div>
-			<div class="sur_name"><input type="text" placeholder="Введите Фамилию"></div>
+			<div class="first_name"><input type="text" placeholder="Введите Имя" oninput="if(/[^a-zA-Z]/.test(this.value)){let Selection = this.selectionStart-1;this.value=this.value.replace(/[^a-zA-Z]/g,'');this.setSelectionRange(Selection, Selection);}"></div>
+			<div class="sur_name"><input type="text" placeholder="Введите Фамилию" oninput="if(/[^a-zA-Z]/.test(this.value)){let Selection = this.selectionStart-1;this.value=this.value.replace(/[^a-zA-Z]/g,'');this.setSelectionRange(Selection, Selection);}"></div>
 		</div>
 
 		<div class="items">
 			<div  class="column">
-				<div><input class="checkbox cb" type="checkbox" name="item1" id="item1" value="80"><label for="item1">Экспрессо 80р.</label><input type="number" class="item_amount" placeholder="0"></div>
-				<div><input class="checkbox cb" type="checkbox" name="item2" id="item2" value="110"><label for="item2">Американо 110р.</label><input type="number" class="item_amount" placeholder="0"></div>
-				<div><input class="checkbox cb" type="checkbox" name="item3" id="item3" value="120"><label for="item3">Латте 120р.</label><input type="number" class="item_amount" placeholder="0"></div>
-				<div><input class="checkbox cb" type="checkbox" name="item4" id="item4" value="90"><label for="item4">Капучино 90р.</label><input type="number" class="item_amount" placeholder="0"></div>
+				<div><input class="checkbox cb" type="checkbox" name="item1" id="item1" value="80"><label for="item1">Экспрессо 80р.</label><input type="number" class="item_amount" placeholder="0" min="0"  max="999" title="Введите колличество от 0 до 999" onkeyup="this.value = this.value.replace(/[^\d]/g,'');"></div>
+				<div><input class="checkbox cb" type="checkbox" name="item2" id="item2" value="110"><label for="item2">Американо 110р.</label><input type="number" class="item_amount" placeholder="0" min="0"  max="999" title="Введите колличество от 0 до 999" onkeyup="this.value = this.value.replace(/[^\d]/g,'');"></div>
+				<div><input class="checkbox cb" type="checkbox" name="item3" id="item3" value="120"><label for="item3">Латте 120р.</label><input type="number" class="item_amount" placeholder="0" min="0"  max="999" title="Введите колличество от 0 до 999" onkeyup="this.value = this.value.replace(/[^\d]/g,'');"></div>
+				<div><input class="checkbox cb" type="checkbox" name="item4" id="item4" value="90"><label for="item4">Капучино 90р.</label><input type="number" class="item_amount" placeholder="0" min="0"  max="999" title="Введите колличество от 0 до 999" onkeyup="this.value = this.value.replace(/[^\d]/g,'');"></div>
 			</div>
 
 			<div  class="column">
-				<div><input class="checkbox cb" type="checkbox" name="item5" id="item5" value="80"><label for="item5">Шоколадный кекс 80р.</label><input type="number" class="item_amount" placeholder="0"></div>
-				<div><input class="checkbox cb" type="checkbox" name="item6" id="item6" value="90"><label for="item6">Черничный кекс 90р.</label><input type="number" class="item_amount" placeholder="0"></div>
-				<div><input class="checkbox cb" type="checkbox" name="item7" id="item7" value="110"><label for="item7">Яблочный тарт 110р.</label><input type="number" class="item_amount" placeholder="0"></div>
-				<div><input class="checkbox cb" type="checkbox" name="item8" id="item8" value="150"><label for="item8">Чизкейк 150р.</label><input type="number" class="item_amount" placeholder="0"></div>
+				<div><input class="checkbox cb" type="checkbox" name="item5" id="item5" value="80"><label for="item5">Шоколадный кекс 80р.</label><input type="number" class="item_amount" placeholder="0" min="0"  max="999" title="Введите колличество от 0 до 999" onkeyup="this.value = this.value.replace(/[^\d]/g,'');"></div>
+				<div><input class="checkbox cb" type="checkbox" name="item6" id="item6" value="90"><label for="item6">Черничный кекс 90р.</label><input type="number" class="item_amount" placeholder="0" min="0"  max="999" title="Введите колличество от 0 до 999" onkeyup="this.value = this.value.replace(/[^\d]/g,'');"></div>
+				<div><input class="checkbox cb" type="checkbox" name="item7" id="item7" value="110"><label for="item7">Яблочный тарт 110р.</label><input type="number" class="item_amount" placeholder="0" min="0"  max="999" title="Введите колличество от 0 до 999" onkeyup="this.value = this.value.replace(/[^\d]/g,'');"></div>
+				<div><input class="checkbox cb" type="checkbox" name="item8" id="item8" value="150"><label for="item8">Чизкейк 150р.</label><input type="number" class="item_amount" placeholder="0" min="0"  max="999" title="Введите колличество от 0 до 999" onkeyup="this.value = this.value.replace(/[^\d]/g,'');"></div>
 			</div>
 		</div>
 
