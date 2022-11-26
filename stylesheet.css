@@ -56,6 +56,7 @@ body{
     justify-content: space-between;
     flex-direction: column;
     text-align: left;
+    
 }
 
 .summ{
@@ -107,6 +108,9 @@ input{
 input[type="number"]{
     width: 60px;
     -moz-appearance: textfield;
+    float: right;
+    clear: both;
+    transform: translate(0%, -17%) 
 }
 input::placeholder{
     color: #fff;
@@ -116,4 +120,42 @@ input::placeholder{
 label{
     color: #fff;
     font-size: 20px;
+    margin: 0 0 0 10px;
+    
 }
+
+
+.cb{
+    margin: 0;
+    transform: translate(176%, -35%);
+    scale: 200%;
+    z-index: -1;
+    opacity: 0;
+    
+
+}
+
+.cb+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+  }
+
+.cb+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin: 0 15px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 6px solid #854c2b;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.cb:checked+label::before {
+    background-color: #6a4646
+}
+
