@@ -117,6 +117,11 @@ input::placeholder{
     font-family: 'Oswald', sans-serif;
     text-align: center;
 }
+.item_amount{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
 label{
     color: #fff;
     font-size: 20px;
